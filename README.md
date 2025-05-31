@@ -1,41 +1,60 @@
-# Material UI - Vite example in TypeScript
+# 📄 Resume App
 
-## How to use
+A sleek, modern resume website built with **React**, **TypeScript**, **Vite**, and **Material UI**. Designed to be fast, responsive, and easily deployed via GitHub Pages.
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+> 🌐 [Live Demo](https://robertohonda.github.io/resume/)
 
-<!-- #target-branch-reference -->
+---
+
+## 🧱 Tech Stack
+
+- ⚛️ **React** – Declarative, component-based UI  
+- 🧑‍🎨 **Material UI** – Google's design system for React  
+- 🧵 **Emotion** – CSS-in-JS for powerful theming  
+- ⚡ **Vite** – Fast, modern frontend tooling  
+- 🔐 **TypeScript** – Type-safe development  
+- 🚀 **GitHub Pages** – Static site deployment  
+
+---
+
+## 🛠️ Getting Started
+
+### 1. Clone and Install
 
 ```bash
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2 material-ui-master/examples/material-ui-vite-ts
-cd material-ui-vite-ts
+git clone https://github.com/robertohonda/resume.git
+cd resume
+npm install
 ```
 
-Install it and run:
+### 2. Development Server
 
 ```bash
-npm install
 npm run dev
 ```
+Runs the app in development mode.
+Open http://localhost:5173/resume/ to view it in the browser.
 
-or:
+### 3. Build for Production
 
-<!-- #target-branch-reference -->
+```bash
+npm run build
+```
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/sandbox/github/mui/material-ui/tree/master/examples/material-ui-vite-ts)
+Generates a production-ready build in the dist/ folder using TypeScript and Vite.
 
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/material-ui-vite-ts)
 
-## The idea behind the example
+### 4. Preview Production Build Locally
+```bash
+npm run preview
+```
 
-<!-- #host-reference -->
+## 🚀 Deploying to GitHub Pages
+```bash
+npm run deploy
+```
+This will build the app and publish the `dist/` folder to the `gh-pages` branch.
 
-This example demonstrates how you can use Material UI with [Vite](https://vite.dev) in [TypeScript](https://github.com/Microsoft/TypeScript).
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI.
+## License
 
-## What's next?
-
-<!-- #host-reference -->
-
-You now have a working example project.
-You can head back to the documentation and continue by browsing the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
