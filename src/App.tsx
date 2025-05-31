@@ -1,38 +1,25 @@
-import * as React from 'react';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-import ProTip from './ProTip';
-
-function Copyright() {
-  return (
-    <Typography
-      variant="body2"
-      align="center"
-      sx={{
-        color: 'text.secondary',
-      }}
-    >
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}.
-    </Typography>
-  );
-}
+import CssBaseline from "@mui/material/CssBaseline";
+import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
+import Resume from "./components/Resume";
+import data from "./data";
 
 export default function App() {
   return (
-    <Container maxWidth="sm">
-      <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" sx={{ mb: 2 }}>
-          Material UI Vite example in TypeScript
-        </Typography>
-        <ProTip />
-        <Copyright />
+    <>
+      <CssBaseline />
+      <Box
+        sx={{
+          display: "flex",
+          width: "100%",
+          height: "100%",
+          bgcolor: "rgba(0, 0, 0, 0.05)",
+        }}
+      >
+        <Container component="main" maxWidth="lg" sx={{ paddingY: 3 }}>
+          <Resume data={data} />
+        </Container>
       </Box>
-    </Container>
+    </>
   );
 }
