@@ -9,7 +9,7 @@ import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
 import Divider from "@mui/material/Divider";
 import List from "@mui/material/List";
-import ListItemButton from "@mui/material/ListItemButton";
+import ListItem from '@mui/material/ListItem';
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 
@@ -77,13 +77,13 @@ export default function Resume({ data }: ResumeProps) {
             <Divider sx={{ mt: 2 }} />
             <List component="nav" dense>
               {data.contacts.map((contact, index) => (
-                <ListItemButton key={index}>
+                <ListItem key={index} >
                   <ListItemIcon>{contact.icon}</ListItemIcon>
                   <ListItemText
                     primary={contact.label}
                     secondary={contact.value}
                   />
-                </ListItemButton>
+                </ListItem>
               ))}
             </List>
             <Divider sx={{ mb: 2 }} />
@@ -94,12 +94,12 @@ export default function Resume({ data }: ResumeProps) {
             </Typography>
             <List component="nav" dense>
               {data.skills.map((skill, index) => (
-                <ListItemButton key={index}>
+                <ListItem key={index}>
                   <ListItemText
                     primary={skill.category}
                     secondary={skill.skills}
                   />
-                </ListItemButton>
+                </ListItem>
               ))}
             </List>
           </ResumeCard>

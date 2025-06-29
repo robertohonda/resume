@@ -30,6 +30,11 @@ const data = {
       skills:
         "Git, Docker, React, Redux, Material-UI, Bootstrap, JestJS, Next.js, NestJS, Express.js, MongoDB, PostgreSQL, MySQL, Sequelize, Prisma.io, Auth0, Flutter",
     },
+    {
+      category: "Language",
+      skills:
+        "Portuguese, English, Japanese",
+    },
   ],
   socialMedia: [
     {
