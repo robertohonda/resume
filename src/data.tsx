@@ -69,7 +69,7 @@ const data = {
     },
     {
       title: "Freelance Developer",
-      date: "Nov 2019 - Dev 2022",
+      date: "Nov 2019 - Dec 2022",
       description:
         "Worked as a freelancer developing an online store for Brazilian products, including a management system for product listings, user accounts, and order tracking. Used React, Redux, Redux-Saga, Material-UI, Node.js, Express, and MongoDB.",
     },
